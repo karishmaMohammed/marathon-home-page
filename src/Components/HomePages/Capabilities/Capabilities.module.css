@@ -1,0 +1,120 @@
+.capabilities-page {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    /* margin-top: 90px; */
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    /* background: #EDF4F9; */
+    /* background: linear-gradient(180deg, #FFF 15.53%, rgba(255, 255, 255, 0.10) 100.05%); */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.capabilities-page-head {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 16px;
+}
+
+.capabilities-page-head-title {
+    color: #001325;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: center;
+}
+
+.capabilities-page-head-desc {
+    color: #001325;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.8;
+}
+
+.capabilities-page-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 24px; /* Row gap: 24px, Column gap: 40px */
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    /* height: 500px; */
+    /* background: #edf2f7; */
+}
+
+
+.capabilities-page-card {
+    width: 360px;
+    height: 300px;
+    border-radius: 12px;
+    border: 1px solid rgba(217, 183, 253, 0.30);
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+.capabilities-page-card:hover{
+    padding: 24px 5px;
+}
+
+.capabilities-page-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.capabilities-page-card-head {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    
+    letter-spacing: -0.288px;
+}
+
+.capabilities-page-card-desc {
+    color: #001325;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    
+    opacity: 0.5;
+}
+.capabilities-img-cont{
+    width: 100%;
+   
+}
+.capabilities-img{
+    width: 100%;
+}
+@media screen and (max-width:1200px){
+    .capabilities-page-img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        /* padding: 24px; */
+        box-sizing: border-box;
+        gap: 40px;
+    }
+   
+}
+
+@media screen and (max-width:500px){
+   
+    .capabilities-page-card{
+        width: 100%;
+    }
+}

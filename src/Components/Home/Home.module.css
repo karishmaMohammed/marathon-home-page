@@ -1,0 +1,26 @@
+.scrollSection {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.scrollSection.inView {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: Custom animation for specific sections */
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scrollSection.whyUs {
+  animation: fadeInSlideUp 1s ease-out forwards;
+}

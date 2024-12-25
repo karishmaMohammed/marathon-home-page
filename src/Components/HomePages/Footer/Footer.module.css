@@ -1,0 +1,112 @@
+.footer-page {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), #610BEE;
+    width: 100%;
+    padding: 63px 80px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.footer-logo {
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+.footer-logo span {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    opacity: 0.5;
+}
+
+.footer-navs {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 24px;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 16px;
+    width: 450px;
+    
+}
+
+.footer-form span {
+    color: #FFF;
+    /* text-align: center; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+}
+
+.footer-form input {
+    padding: 12px 18px;
+    border-radius: 5px;
+    border: 1px solid #EDF2F7;
+    box-sizing: border-box;
+    background: #FFF;
+    width: 48%;
+}
+.footer-form div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-form textarea {
+    padding: 12px 18px;
+    border-radius: 5px;
+    border: 1px solid #EDF2F7;
+    background: #FFF;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-form button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background: #610BEE;
+    border: none;
+    width: 93px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color:  #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.192px;
+}
+
+@media screen and (max-width:750px){
+    .footer-page {
+        
+       
+        padding: 30px;
+        gap: 24px;
+        
+    }
+    .footer-form div{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .footer-form input{
+       width: 100%;
+    }
+}

@@ -1,0 +1,186 @@
+.security-page {
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 800px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .security-container {
+    background-image: url('https://marathon-web-assets.s3.ap-south-1.amazonaws.com/security-bg.svg');
+    background-color: #220A48; /* Ensure the fallback color is applied */
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    background-size: cover; /* Ensure the background image covers the container */
+    background-position: center; /* Position the image to the center */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+  }
+  
+  .security-container-div{
+    background-color: #220A48; 
+    display: flex;
+   border-radius: 50%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: fit-content;
+    width: fit-content;
+    /* filter: blur(100px); */
+  }
+  .security-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 6px;
+    text-align: left;
+    width: 40%;
+    
+  }
+  
+  .security-head {
+    color: #fff;
+    font-family: Syne;
+    font-size: 52.313px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 63.36px;
+    /* 121.118% */
+    letter-spacing: -0.48px;
+  }
+  
+  .security-desc {
+    color: rgba(255, 255, 255, 0.8);
+    padding-right: 6.5vw;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 160% */
+    letter-spacing: -0.5px;
+  }
+  
+  .security-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    /* Medium/16 */
+  }
+  
+  .security-btn button {
+    color: #fff;
+    cursor: pointer;
+    width: 145px;
+    height: 44px;
+    /* padding: 1.7vh 2vw; */
+    background: inherit;
+    border: 1.5px solid #fff;
+    border-radius: 4px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.192px;
+  }
+  
+  .security-points {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 25px;
+  }
+  
+  .security-internal-points img {
+    width: 40px;
+    height: 41px;
+  }
+  
+  .security-internal-points span {
+    color: #fff;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    /* 150% */
+  }
+  
+  .security-internal-points {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .security-points-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  
+  }
+  
+  @media screen and (max-width:1000px){
+    .security-container{
+      /* padding: 48px; */
+      flex-direction: column;
+  }
+  .security-content{
+    width: 100%;
+  }
+  /* .security-points{
+    display: flex;
+    flex-direction: row;
+  } */
+  }
+  @media screen and (max-width:600px) {
+    .security-page{
+      padding: 24px;
+    }
+    .security-container {
+      
+      /* padding: 24px; */
+      gap: 45px;
+    }
+  
+    .security-head {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  
+    .security-desc {
+      /* font-size: 12px; */
+      line-height: 20px;
+    }
+    .security-internal-points{
+        align-items: center;
+    }
+    .security-internal-points span {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .security-btn button {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+    }
+  }

@@ -1,0 +1,490 @@
+/* font-size: Clamp(25px, 3.4vw, 50px) */
+
+
+.home-page-container {
+  background: white;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.home-page-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 12px 64px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background: white;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.24px;
+
+}
+
+.home-page-top img {
+  width: 160px;
+  height: 30px;
+}
+
+.home-page-navs {
+  padding: 9px 24px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 67px;
+  /* justify-content: space-around; */
+
+  width: 40vw;
+}
+
+.home-page-navs a {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.home-pg-btns {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.home-pg-btns button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #610bee;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.home-pg-menu {
+  display: none;
+}
+
+.try-demo {
+  background: #610bee;
+  color: white;
+}
+
+.home-login {
+  color: #610bee;
+  background: white;
+}
+
+.home-landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-landing-container {
+  width: 100%;
+  padding: 48px 164px 0px 164px;
+  background: white;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-landing-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.home-landing-teams {
+  padding: 6px 12px;
+  /* gap: 10px; */
+  border-radius: 100px;
+  font-size: 12px;
+  border: 1px solid #ff7a7a;
+  color: #080808;
+  width: 165px;
+
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+.home-landing-title {
+  color: black;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+
+  /* word-break: break-all; */
+  font-family: Syne;
+}
+
+.home-hardware-title {
+  color: #610bee;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+
+  /* word-break: break-all; */
+  font-family: Syne;
+}
+
+.home-landing-bottom-img-mobile {
+  display: none;
+}
+
+.home-landing-description {
+  color: #001325;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+
+}
+
+.home-hardware-title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.home-landing-btns {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  justify-content: flex-start;
+}
+
+.home-landing-btns button {
+  border: 1.5px solid #610bee;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  padding: 12px 32px;
+  cursor: pointer;
+
+}
+
+.home-landing-wait-list {
+  color: #610bee;
+  background: white;
+  width: 184px;
+  font-size: 18px;
+}
+
+.home-landing-try-demo {
+  color: white;
+  background: #610bee;
+  width: 187px;
+}
+
+.home-landing-girl-img {
+  width: 47vw;
+  height: 350px;
+}
+
+.home-landing-bottom-img {
+  background-image: url("https://marathon-web-assets.s3.ap-south-1.amazonaws.com/background-img_1.png");
+  /* background: linear-gradient(180deg, #FFF 16.13%, rgba(255, 255, 255, 0.10) 186.1%); */
+  background-position: bottom;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.home-landing-bottom-img img {
+
+  width: 92%;
+  height: 532px;
+}
+
+
+
+/* MOBILE VIEW */
+@media screen and (max-width:1550px) {
+  .home-landing-title {
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+
+    /* word-break: break-all; */
+    font-family: Syne;
+  }
+
+  .home-hardware-title {
+    color: #610bee;
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+
+    /* word-break: break-all; */
+    font-family: Syne;
+  }
+
+}
+
+@media screen and (max-width:1300px) {
+  .home-landing-girl-img {
+    width: 500px;
+    height: 340px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .home-landing-container {
+    padding: 24px;
+
+  }
+}
+
+@media screen and (max-width:1050px) {
+  .home-page-top {
+    padding: 16px 32px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+
+  .home-page-navs,
+  .home-pg-btns {
+    display: none;
+  }
+
+  .home-pg-menu {
+    display: flex;
+    cursor: pointer;
+
+  }
+
+  .home-pg-menu img {
+    width: 28px;
+    height: 28px;
+
+  }
+
+  .home-landing-container {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 24px;
+  }
+
+  .home-landing-description {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .home-hardware-title {
+    font-size: 24px;
+  }
+
+  .home-landing-girl-img {
+    width: 60%;
+  }
+
+  .home-landing-content {
+    width: 100%;
+    word-break: keep-all;
+  }
+
+}
+
+
+@media screen and (max-width:600px) {
+
+
+  .home-landing-content {
+    gap: 4px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .home-landing-description {
+    width: 100%;
+    font-size: 12px;
+  }
+
+
+
+  .home-landing-title {
+    font-size: 24px;
+    font-display: swap;
+
+  }
+
+  .home-landing-title {
+    font-size: 24px;
+    font-display: swap;
+  }
+
+
+  .home-landing-btns button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .home-landing-bottom-img {
+    display: none;
+  }
+
+  .home-landing-bottom-img-mobile {
+    /* display: block; */
+    background-image: url("https://marathon-web-assets.s3.ap-south-1.amazonaws.com/background_mobile_dots.webp");
+    background-position: bottom;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-landing-bottom-img-mobile img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .home-landing-girl-img {
+    width: 100%;
+    height: 200px;
+  }
+
+}
+
+@media screen and (max-width:400px) {
+  .home-landing-btns button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+
+
+  /* .home-pg-menu img{
+      width: 24px;
+      height: 24px;
+    } */
+
+}
+
+
+
+/* menu bar styling */
+
+.menu-page {
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.10) 100%), #001325;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100vh;
+
+}
+
+
+
+
+.menu-close-icon {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  color: white;
+}
+
+.menu-close-icon span {
+  cursor: pointer;
+}
+
+.menu-navs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+
+}
+
+.menu-navs a {
+  width: 100%;
+  color: white;
+
+  border-bottom: 1px solid white;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.menu-navs a:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+}
+
+.menu-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.menu-buttons button {
+  border-radius: 4px;
+  border: 1.5px solid #610BEE;
+  height: 40px;
+  padding: 10px 20px;
+}
+
+.try-demo-menu {
+  color: #FFF;
+  /* Medium/14 */
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  /* 142.857% */
+  letter-spacing: -0.14px;
+  background: #610BEE;
+  width: 104px;
+}
+
+.home-login {
+  background: white;
+  width: 77px;
+  color: #610BEE;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  /* 142.857% */
+  letter-spacing: -0.14px;
+}
