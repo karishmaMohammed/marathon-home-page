@@ -8,7 +8,7 @@ import HomeNavs from "./HomeNavs";
 import Link from 'next/link'; 
 import styles from './HomeTopNav.module.css'; 
 
-function HomeTopNav() {
+function HomeTopNav({openDemoForm, setOpenDemoForm}) {
   const [openMenu, setMenuOpen] = useState(false);
   
 
@@ -27,7 +27,7 @@ function HomeTopNav() {
 
    const handleMenuOpen = (event) => {
     event.stopPropagation(); 
-    setMenuOpen(true);
+    setMenuOpen(!openMenu);
   };
   
 
@@ -50,7 +50,7 @@ function HomeTopNav() {
           </div>
           <div className={styles['home-pg-btns']}>
             {/* buttons */}
-            <button className={styles['try-demo']}>Request demo</button>
+            <button className={styles['try-demo']} onClick={() => setOpenDemoForm(!openDemoForm)}>Request demo</button>
             {/* <button className={styles['home-login']} onClick={HnadleNavigate}>Login</button> */}
           </div>
           <div className={styles['home-pg-menu']} onClick={(e)=>handleMenuOpen(e)}>
@@ -58,7 +58,7 @@ function HomeTopNav() {
           height={500}/>
           </div>
         </div>
-        {openMenu && <HomeNavs onClose={handleCloseMenu} HnadleNavigate={HnadleNavigate}/>}
+        {openMenu && <HomeNavs onClose={handleCloseMenu} HnadleNavigate={HnadleNavigate} openDemoForm={openDemoForm} setOpenDemoForm={setOpenDemoForm}/>}
        
      
     </>

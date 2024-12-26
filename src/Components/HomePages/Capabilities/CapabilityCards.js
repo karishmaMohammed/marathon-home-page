@@ -7,32 +7,32 @@ import ReactParallaxTilt from 'react-parallax-tilt'; // Import react-parallax-ti
 
 const CAPABILITIESLIST = [
     {
-        image: IMAGEURLS.cadCapability,
+        // image: IMAGEURLS.cadCapability,
         title: 'CAD Data Management',
         description: 'Efficiently handle files and designs with version control.'
     },
     {
-        image: IMAGEURLS.cadCapability,
+        // image: IMAGEURLS.cadCapability,
         title: 'BOM and Part Management',
         description: 'BOM and Part Management.'
     },
     {
-        image: IMAGEURLS.cadCapability,
+        // image: IMAGEURLS.cadCapability,
         title: 'Production Scheduling',
         description: 'Plan and monitor production in real time.'
     },
     {
-        image: IMAGEURLS.cadCapability,
+        // image: IMAGEURLS.cadCapability,
         title: 'Production Scheduling',
         description: 'Plan and monitor production in real time.'
     },
     {
-        image: IMAGEURLS.cadCapability,
+        // image: IMAGEURLS.cadCapability,
         title: 'Inventory and Purchase Management',
         description: 'Stay on top of supplies and orders.'
     },
     {
-        image: IMAGEURLS.cadCapability,
+        // image: IMAGEURLS.cadCapability,
         title: 'Change Management',
         description: 'Implement ECOs with ease and traceability.'
     },
@@ -49,13 +49,13 @@ function CapabilityCards() {
                     transitionSpeed={1500} className={styles['capabilities-page-card']}>
 
                     <div className={styles['capabilities-img-cont']}>
-                        <Image
+                        {/* <Image
                             src={capability.image}
                             alt={capability.title}
                             className={styles['capabilities-img']}
                             width={350}
                             height={150}
-                        />
+                        /> */}
                     </div>
                     <div className={styles['capabilities-page-card-text']}>
                         <span className={styles['capabilities-page-card-head']}>

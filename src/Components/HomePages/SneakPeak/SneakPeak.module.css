@@ -26,7 +26,7 @@
     color: white;
 }
 
-.sneak-page-text ul {
+.sneak-page-text li {
     margin: 0px;
     font-size: 18px;
     font-style: normal;
@@ -58,5 +58,6 @@
         padding: 30px 0px;
         gap: 130px;
         width: 90%;
+        justify-content: center;
     }
 }

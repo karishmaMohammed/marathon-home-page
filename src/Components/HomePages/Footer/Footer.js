@@ -7,15 +7,15 @@ import axios from 'axios';
 
 function Footer() {
     const [name,setName]=useState('')
-    const [email,setEmail]=useState('')
+    const [phoneNumber,setPhoneNumber]=useState('')
     const [message,setMessage]=useState('')
     const requestDemo = async () => {
         try {
           if(!name){
             console.log('name required')
           }
-          if(!email){
-            console.log('email required')
+          if(!phoneNumber){
+            console.log('phoneNumber required')
           }
           if(!message){
             console.log('message required')
@@ -23,22 +23,22 @@ function Footer() {
           // const data = selectedOption.value === "Admin" ? true : false;
         const response=  await axios.post(
             BASE_URL + "/v1/member/demo",
-            { email,name,message },
+            { phoneNumber,name,message },
             { headers: {"x-auth-token": localStorage.getItem('token')} }
           );
-          if(!response.data.success){
+          if(!response.data.meta.success){
             console.log(response.data.message)
           }else{
             
             setName('')
-            setEmail('')
+            setPhoneNumber('')
             setMessage('')
           }
           // console.log(response)
         } catch (error) {
           console.log(error);
         }
-        // console.log(name,email,message)
+        // console.log(name,phoneNumber,message)
       };
     return (
         <div className={styles['footer-page']}>
@@ -65,7 +65,7 @@ function Footer() {
                 <span>Ask a question</span>
                 <div>
                 <input placeholder='Name*' onChange={(e)=>setName(e.target.value)}/>
-                <input placeholder='Email*' onChange={(e)=>setEmail(e.target.value)}/>
+                <input placeholder='Phone number*' onChange={(e)=>setPhoneNumber(e.target.value)}/>
                 </div>
                 <textarea placeholder='Message*' onChange={(e)=>setMessage(e.target.value)}/>
                 <button onClick={requestDemo}>Submit</button>

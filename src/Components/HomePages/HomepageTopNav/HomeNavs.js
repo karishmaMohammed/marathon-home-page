@@ -2,7 +2,8 @@ import React from 'react';
 import { useRouter } from "next/navigation"; // Use useRouter from Next.js for client-side navigation
 import styles from './HomeTopNav.module.css'; // Import your CSS module
 
-function HomeNavs({ onClose,HnadleNavigate }) {
+function HomeNavs({ onClose,openDemoForm, setOpenDemoForm }) {
+  
   const router = useRouter(); // Initialize the useRouter hook for navigation
 
   const handleCloseMenu = () => {
@@ -24,10 +25,10 @@ function HomeNavs({ onClose,HnadleNavigate }) {
         <a href="#security" style={{textDecoration:'none'}} onClick={handleCloseMenu}>Security</a>
       </div>
       <div className={styles['menu-buttons']}>
-        {/* <button className={styles['try-demo-menu']}>Try Demo</button> */}
-        <button className={styles['home-login-menu']} onClick={HnadleNavigate}>
+      <button className={styles['try-demo']} onClick={() => setOpenDemoForm(!openDemoForm)}>Request demo</button>
+        {/* <button className={styles['home-login-menu']} onClick={HnadleNavigate}>
           Login
-        </button>
+        </button> */}
       </div>
     </div>
   );

@@ -25,19 +25,21 @@
     background-size: cover; /* Ensure the background image covers the container */
     background-position: center; /* Position the image to the center */
     background-repeat: no-repeat; /* Prevent repeating the background image */
+    position: relative;
+    overflow: hidden;
   }
   
   .security-container-div{
     background-color: #220A48; 
-    display: flex;
-   border-radius: 50%;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    height: fit-content;
-    width: fit-content;
-    /* filter: blur(100px); */
+   
+   /* border-radius: 50%; */
+   width: 80%;
+   height: 80%;
+    position: absolute;
+    filter: blur(100px);
+    z-index: 1;
+    border: 1px solid red;
+    top: 10%;
   }
   .security-content {
     display: flex;
@@ -47,6 +49,7 @@
     gap: 6px;
     text-align: left;
     width: 38%;
+    z-index: 10 !important;
     
   }
   
@@ -86,7 +89,6 @@
     cursor: pointer;
     width: 145px;
     height: 44px;
-    /* padding: 1.7vh 2vw; */
     background: inherit;
     border: 1.5px solid #fff;
     border-radius: 4px;
@@ -95,14 +97,17 @@
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-    /* 150% */
     letter-spacing: -0.192px;
   }
-  
+  .security-btn button:hover{
+    background: white;
+    color: inherit;
+    border: 1px solid #610bee;
+  }
   .security-points {
     display: flex;
     flex-direction: column;
-   
+    z-index: 10 !important;
     align-items: flex-start;
     justify-content: flex-start;
     text-align: left;

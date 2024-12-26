@@ -1,13 +1,17 @@
+"use client";
 import React from "react";
 import { IMAGEURLS } from "@/config";
 import Image from "next/image";
 import styles from "./Security.module.css";
+import RequestDemo from "../Workflow/RequestDemo";
 
-function Security() {
+function Security({openDemoForm, setOpenDemoForm}) {
+ 
   return (
-    <div  className={styles["security-page"]} id="security">
-      <div className={styles["security-container"]}>
-        {/* <div className={styles["security-container-div"]}> */}
+   
+      <div className={styles["security-page"]} id="security">
+        <div className={styles["security-container"]}>
+          <div className={styles["security-container-div"]}></div>
           <div className={styles["security-content"]}>
             <span className={styles["security-head"]}>Designed for Security</span>
             <span className={styles["security-desc"]}>
@@ -15,7 +19,7 @@ function Security() {
               is more important than anything else.
             </span>
             <div className={styles["security-btn"]}>
-              <button>Request a demo</button>
+              <button onClick={()=>setOpenDemoForm(!openDemoForm)}>Request a demo</button>
             </div>
           </div>
           <div className={styles["security-points"]}>
@@ -88,10 +92,13 @@ function Security() {
               </div>
             </div>
           </div>
-        </div>
 
-      {/* </div> */}
-    </div>
+
+        </div>
+      </div>
+     
+  
+
   );
 }
 

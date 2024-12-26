@@ -7,14 +7,13 @@ import RequestDemo from './RequestDemo';
 import { Boxes } from "./ui/background-boxes"; // Adjust path if necessary
 // import { cn } from "@/lib/utils";
 
-function WorkFlow() {
-    const [openDemoForm, setOpenDemoForm] = useState(false)
+function WorkFlow({openDemoForm, setOpenDemoForm}) {
+    // const [openDemoForm, setOpenDemoForm] = useState(false)
     return (
-        <>
+    
 
 
-            {/* Background Boxes */}
-            {/* <Boxes /> */}
+            
             <div className={styles["workflow-page"]} style={{ position: 'relative' }}>
 
                 <Boxes />
@@ -83,8 +82,8 @@ function WorkFlow() {
                 <button onClick={() => setOpenDemoForm(!openDemoForm)}>Request demo</button>
             </div>
 
-            {openDemoForm && <RequestDemo onclose={() => setOpenDemoForm(!openDemoForm)} />}
-        </>
+         
+   
 
     )
 }

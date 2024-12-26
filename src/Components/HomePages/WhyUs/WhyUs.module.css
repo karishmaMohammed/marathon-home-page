@@ -68,6 +68,17 @@
     font-weight: 400;
 }
 
+
+@media screen and (max-width:1170px){
+    .whyus-cont {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .whyus-cont-text{
+        text-align: center;
+    }
+}
 @media screen and (max-width:1500px){
     .whyus-conts {
         display: flex;

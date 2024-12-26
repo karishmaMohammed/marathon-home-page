@@ -10,7 +10,7 @@
     box-sizing: border-box;
     gap: 40px;
    overflow:hidden ;
-   min-height: 100vh;
+   /* min-height: 100vh; */
    box-sizing: border-box;
    
 
@@ -53,7 +53,17 @@
 
 
 }
+.workflow-imgs1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 76px;
+    position: relative;
 
+
+}
 .workflow-img {
     border-radius: 8px;
     background: rgba(237, 217, 251, 0.10);
@@ -65,7 +75,17 @@
     justify-content: center;
     position: relative;
 }
-
+.workflow-img1 {
+    border-radius: 8px;
+    background: rgba(237, 217, 251, 0.10);
+    backdrop-filter: blur(32.60972595214844px);
+    width: 181px;
+    height: 181px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 .workflow-page button {
     border-radius: 4px;
     background: #FFF;
@@ -132,14 +152,43 @@
 }
 
 
+.vertical-work-line {
+    background: linear-gradient(180deg, rgba(32, 7, 56, 0.30) 22%, rgba(234, 179, 252, 0.30) 45.5%, rgba(33, 7, 56, 0.30) 91.5%);
+    width: 1px;
+    height: 550px;
+    flex-shrink: 0;
+    position: absolute;
+    /* margin-right: 20px; */
 
+}
+
+.horizontal-work-line {
+    background: linear-gradient(90deg, rgba(32, 7, 56, 0.30) 0%, rgba(234, 179, 252, 0.30) 45.5%, rgba(33, 7, 56, 0.30) 100%);
+    width: 100%;
+    height: 1px;
+    align-self: stretch;
+    position: absolute;
+    /* top: 231px; */
+}
+
+.vertical-mobile-work-line {
+    background: linear-gradient(180deg, rgba(32, 7, 56, 0.30) 22%, rgba(234, 179, 252, 0.30) 45.5%, rgba(33, 7, 56, 0.30) 91.5%);
+    width: 1px;
+    display: none;
+    height: 100%;
+    align-self: stretch;
+    position: absolute;
+}
 
 @media screen and (max-width:1050px) {
     .workflow-imgs {
         gap: 30px;
         justify-content: center;
     }
-
+    .horizontal-work-line,
+    .vertical-work-line {
+        display: none;
+    }
     
 
    
