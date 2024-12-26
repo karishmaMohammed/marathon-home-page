@@ -9,13 +9,18 @@
     padding: 80px;
     box-sizing: border-box;
     gap: 40px;
-    /* height: 100px; */
+   overflow:hidden ;
+   min-height: 100vh;
+   box-sizing: border-box;
+   
 
 }
 
 .workflow-head {
     display: flex;
     flex-direction: column;
+    color: white !important;
+    z-index: 10 !important;
 }
 
 .workflow-head-title {
@@ -44,7 +49,7 @@
     align-items: center;
     justify-content: center;
     gap: 76px;
-    position: relative;
+    /* position: relative; */
 
 
 }
@@ -76,43 +81,18 @@
     box-sizing: border-box;
     border: none;
     cursor: pointer;
+    z-index: 10 !important;
 }
 
-.vertical-work-line {
-    background: linear-gradient(180deg, rgba(32, 7, 56, 0.30) 22%, rgba(234, 179, 252, 0.30) 45.5%, rgba(33, 7, 56, 0.30) 91.5%);
-    width: 1px;
-    height: 550px;
-    flex-shrink: 0;
+
+.workflow-crane-img{
     position: absolute;
-    /* margin-right: 20px; */
-
+    bottom: -20%;
+    /* left: 50%; */
+    width: 200px;
+    height: 307px;
 }
 
-.horizontal-work-line {
-    background: linear-gradient(90deg, rgba(32, 7, 56, 0.30) 0%, rgba(234, 179, 252, 0.30) 45.5%, rgba(33, 7, 56, 0.30) 100%);
-    width: 100%;
-    height: 1px;
-    align-self: stretch;
-    position: absolute;
-    /* top: 231px; */
-}
-
-.vertical-mobile-work-line {
-    background: linear-gradient(180deg, rgba(32, 7, 56, 0.30) 22%, rgba(234, 179, 252, 0.30) 45.5%, rgba(33, 7, 56, 0.30) 91.5%);
-    width: 1px;
-    display: none;
-    height: 100%;
-    align-self: stretch;
-    position: absolute;
-}
-
-/* .vertical-work-lines{
-    width: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-} */
 .demo-popup {
     width: 100%;
     height: 100vh;
@@ -120,7 +100,7 @@
     top: 0px;
     left: 0px;
     background-color: rgba(0, 19, 37, 0.5);
-    z-index: 2;
+    z-index: 20;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,6 +119,7 @@
     width: 100%;
     font-size: 24px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 .demo-head img{
     cursor: pointer;
@@ -159,12 +140,9 @@
         justify-content: center;
     }
 
-    .horizontal-work-line,
-    .vertical-work-line {
-        display: none;
-    }
+    
 
-    /*  font-size: Clamp(35px, 4.3vw, 70px); */
+   
 }
 
 @media screen and (max-width:750px) {
@@ -182,10 +160,7 @@
         font-size: 18px;
     }
 
-    .horizontal-mobile-work-line,
-    .vertical-mobile-work-line {
-        display: block;
-    }
+    
     .demo-popup-cont{
         width: 80%;
     }

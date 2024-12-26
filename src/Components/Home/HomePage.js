@@ -35,8 +35,12 @@ const HomePage = () => {
     });
   });
 
+  // Trigger handleScroll on initial render
+  useEffect(() => {
+    handleScroll();
+  }, []);
+
   const sections = [
-    
     { name: "whyUs", component: <WhyUs /> },
     { name: "capabilities", component: <Capabilities /> },
     { name: "sneakPeak", component: <SneakPeak /> },
@@ -55,6 +59,7 @@ const HomePage = () => {
             key={section.name}
             ref={(el) => (sectionRefs.current[section.name] = el)}
             className={`${styles.scrollSection}`}
+            style={{ background: "white" }}
           >
             {section.component}
           </div>

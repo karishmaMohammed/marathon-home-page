@@ -1,16 +1,16 @@
-"use client"; // This marks the component as a Client Component
+"use client";
 
 import React, {  useState,useEffect } from "react";
 import { IMAGEURLS } from "@/config";
 import Image from "next/image";
 import HomeLanding from "./HomeLanding";
 import HomeNavs from "./HomeNavs";
-import Link from 'next/link'; // Import Link for navigation
-import styles from './HomeTopNav.module.css'; // Import your styles module if needed
+import Link from 'next/link'; 
+import styles from './HomeTopNav.module.css'; 
 
 function HomeTopNav() {
   const [openMenu, setMenuOpen] = useState(false);
-   // Use the useRouter hook for navigation
+  
 
   //  useEffect(() => {
   //   const memberDetails = localStorage.getItem('token');
@@ -26,7 +26,7 @@ function HomeTopNav() {
   }
 
    const handleMenuOpen = (event) => {
-    event.stopPropagation(); // Prevent the click from propagating up to parent elements
+    event.stopPropagation(); 
     setMenuOpen(true);
   };
   
@@ -50,8 +50,8 @@ function HomeTopNav() {
           </div>
           <div className={styles['home-pg-btns']}>
             {/* buttons */}
-            {/* <button className={styles['try-demo']}>Get started</button> */}
-            <button className={styles['home-login']} onClick={HnadleNavigate}>Login</button>
+            <button className={styles['try-demo']}>Request demo</button>
+            {/* <button className={styles['home-login']} onClick={HnadleNavigate}>Login</button> */}
           </div>
           <div className={styles['home-pg-menu']} onClick={(e)=>handleMenuOpen(e)}>
             <Image src={IMAGEURLS.menu} alt="Menu Icon" width={500} 
