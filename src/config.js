@@ -24,11 +24,17 @@ export const IMAGEURLS = {
   check: `${ASSET_PREFIX_URL}check.svg`,
   cadCapability: `${ASSET_PREFIX_URL}capability-cad.svg`,
   footerLogo: `${ASSET_PREFIX_URL}contact-logo.svg`,
-  carLogo: `${ASSET_PREFIX_URL}car.webp`,
-  latopLogo: `${ASSET_PREFIX_URL}laptop.webp`,
-  droneLogo: `${ASSET_PREFIX_URL}drone.webp`,
-  robotLogo: `${ASSET_PREFIX_URL}robot.webp`,
-  craneLogo: `${ASSET_PREFIX_URL}crane.webp`,
+  // carLogo: `${ASSET_PREFIX_URL}car.webp`,
+  // latopLogo: `${ASSET_PREFIX_URL}laptop.webp`,
+  // droneLogo: `${ASSET_PREFIX_URL}drone.webp`,
+  // robotLogo: `${ASSET_PREFIX_URL}robot.webp`,
+  // craneLogo: `${ASSET_PREFIX_URL}crane.webp`,
+
+  carLogo: `${ASSET_PREFIX_URL}workflow_car.png`,
+  latopLogo: `${ASSET_PREFIX_URL}wokflow_laptop.png`,
+  droneLogo: `${ASSET_PREFIX_URL}workflow_drone.png`,
+  robotLogo: `${ASSET_PREFIX_URL}workflow_robo.png`,
+  craneLogo: `${ASSET_PREFIX_URL}workflow_crane.png`,
   closeIcon: `${ASSET_PREFIX_URL}close-icon-part-num.png`,
 
   // close-icon-part-num.png

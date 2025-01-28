@@ -9,7 +9,7 @@ function WorkFlowGrids() {
     const [openDemoForm, setOpenDemoForm] = useState(false)
     return (
         <>
-        <div className={styles["workflow-page"]}>
+        <div className={styles["workflow-page"]} style={{marginTop:'20px'}}>
             <div className={styles["workflow-head"]}>
                 <span className={styles["workflow-head-title"]}>Simplify Your Workflow with Cloud PLM & PDM</span>
                 <span className={styles["workflow-head-desc"]}>Manage files, Designs, Parts, BOMs, inventory, and purchases effortlessly in one platform.</span>

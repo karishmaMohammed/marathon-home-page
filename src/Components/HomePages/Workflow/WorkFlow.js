@@ -7,34 +7,37 @@ import RequestDemo from './RequestDemo';
 import { Boxes } from "./ui/background-boxes"; // Adjust path if necessary
 // import { cn } from "@/lib/utils";
 
-function WorkFlow({openDemoForm, setOpenDemoForm}) {
+function WorkFlow({ openDemoForm, setOpenDemoForm }) {
     // const [openDemoForm, setOpenDemoForm] = useState(false)
     return (
-    
 
 
-            
-            <div className={styles["workflow-page"]} style={{ position: 'relative' }}>
-
-                <Boxes />
 
 
-                <div className={styles["workflow-head"]}>
-                    <span className={styles["workflow-head-title"]}>Simplify Your Workflow with Cloud PLM & PDM</span>
-                    <span className={styles["workflow-head-desc"]}>Manage files, Designs, Parts, BOMs, inventory, and purchases effortlessly in one platform.</span>
-                </div>
-                <div className={styles["workflow-imgs"]}>
+        <div className={styles["workflow-page"]} style={{ position: 'relative' }}>
 
+            <Boxes />
+
+
+            <div className={styles["workflow-head"]}>
+                <span className={styles["workflow-head-title"]}>Simplify Your Workflow with Cloud PLM & PDM</span>
+                <span className={styles["workflow-head-desc"]}>Manage files, Designs, Parts, BOMs, inventory, and purchases effortlessly in one platform.</span>
+            </div>
+            <div className={styles["workflow-imgs"]}>
+                <div className={styles["workflow-img-outer"]}>
                     <div className={styles["workflow-img"]}>
 
                         <Image
                             src={IMAGEURLS.carLogo}
                             alt="Encryption in transit"
-                            width={181}
-                            height={181}
+                            width={100}
+                            height={100}
                         />
+                        <span>Automotive</span>
                     </div>
+                </div>
 
+                <div className={styles["workflow-img-outer"]}>
                     <div className={styles["workflow-img"]}>
 
                         <Image
@@ -43,8 +46,12 @@ function WorkFlow({openDemoForm, setOpenDemoForm}) {
                             width={180}
                             height={180}
                         />
+                        <span>Automotive</span>
                     </div>
+                </div>
 
+
+                <div className={styles["workflow-img-outer"]}>
                     <div className={styles["workflow-img"]}>
 
                         <Image
@@ -53,18 +60,26 @@ function WorkFlow({openDemoForm, setOpenDemoForm}) {
                             width={160}
                             height={100}
                         />
+                        <span>Automotive</span>
                     </div>
+                </div>
 
+
+                <div className={styles["workflow-img-outer"]}>
                     <div className={styles["workflow-img"]}>
 
                         <Image
                             src={IMAGEURLS.robotLogo}
                             alt="Encryption in transit"
-                            width={128}
-                            height={128}
+                            width={160}
+                            height={140}
                         />
+                        <span>Automotive</span>
                     </div>
+                </div>
 
+
+                <div className={styles["workflow-img-outer"]}>
                     <div className={styles["workflow-img"]}>
 
                         <Image
@@ -74,16 +89,19 @@ function WorkFlow({openDemoForm, setOpenDemoForm}) {
                             height={180}
                             className={styles["workflow-crane-img"]}
                         />
+                        <span>Automotive</span>
                     </div>
-
-
-
                 </div>
-                <button onClick={() => setOpenDemoForm(!openDemoForm)}>Request demo</button>
-            </div>
 
-         
-   
+
+
+
+            </div>
+            <button onClick={() => setOpenDemoForm(!openDemoForm)}>Request demo</button>
+        </div>
+
+
+
 
     )
 }

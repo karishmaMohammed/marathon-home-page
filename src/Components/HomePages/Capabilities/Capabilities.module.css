@@ -3,13 +3,13 @@
     flex-direction: column;
     gap: 48px;
     /* margin-top: 90px; */
-    background: white;
-    padding: 40px;
+    /* background: white; */
+    padding:  40px;
     align-items: center;
     justify-content: center;
-    /* background: #EDF4F9; */
+    background: linear-gradient(180deg, #FFF 15.53%, rgba(255, 255, 255, 0.10) 100.05%);
     /* background: linear-gradient(180deg, #FFF 15.53%, rgba(255, 255, 255, 0.10) 100.05%); */
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     width: 100%;
 }
 
@@ -53,7 +53,7 @@
 
 .capabilities-page-card {
     width: 360px;
-    height: 300px;
+    height: 150px;
     border-radius: 12px;
     border: 1px solid rgba(217, 183, 253, 0.30);
     background: #FFF;
@@ -117,5 +117,10 @@
    
     .capabilities-page-card{
         width: 100%;
+        height: auto;
+        pointer-events: none;
+    }
+    .capabilities-page-card-text{
+        text-align: center;
     }
 }

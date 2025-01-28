@@ -7,8 +7,8 @@ import ReactParallaxTilt from 'react-parallax-tilt';
 
 function WhyUs() {
     return (
-        <div id='why-us' className={styles["whyus-page"]} style={{paddingTop:'40px'}}>
-            <div className={styles["whyus-page"]} style={{ margin: '0px' }}>
+        <div id='why-us' className={styles["whyus-page"]} >
+            <div className={styles["whyus-page-head"]} style={{ margin: '0px' }}>
                 <span className={styles["whyus-head"]}>Why Marathon-OS?</span>
                 <span className={styles["whyus-desc"]}>Build Product Faster with Accurate Data. Manage CAD, Parts, Documents,
                     Bill of Materials, Vendors, Inventories & Purchases</span>
@@ -26,8 +26,8 @@ function WhyUs() {
                         <Image
                             src={IMAGEURLS.allInOne}
                             alt="Encryption in transit"
-                            width={40}
-                            height={40}
+                            width={68}
+                            height={68}
                         />
                     </div>
 
@@ -54,8 +54,8 @@ function WhyUs() {
                         <Image
                             src={IMAGEURLS.carManufac}
                             alt="Encryption in transit"
-                            width={40}
-                            height={40}
+                            width={68}
+                            height={68}
                         />
                     </div>
 
@@ -82,8 +82,8 @@ function WhyUs() {
                         <Image
                             src={IMAGEURLS.cloud}
                             alt="Encryption in transit"
-                            width={40}
-                            height={40}
+                            width={68}
+                            height={68}
                         />
                     </div>
 
@@ -110,8 +110,8 @@ function WhyUs() {
                         <Image
                             src={IMAGEURLS.customised}
                             alt="Encryption in transit"
-                            width={40}
-                            height={40}
+                            width={68}
+                            height={68}
                         />
                     </div>
 

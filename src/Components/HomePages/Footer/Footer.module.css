@@ -1,13 +1,42 @@
 .footer-page {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), #610BEE;
     width: 100%;
-    padding: 63px 80px;
+    margin-top: 30px;
+    padding: 63px 80px 40px 80px;
+    gap: 60px;
     color: white;
     box-sizing: border-box;
+}
+
+.footer-page-cont {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+
+    color: white;
+    box-sizing: border-box;
+}
+
+.footer-logo-navs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.footer-divider {
+    width: 1px;
+    height: 40vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #610BEE;
 }
 
 .footer-logo {
@@ -18,14 +47,27 @@
 
 }
 
+.footer-page-copyright {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    opacity: 0.5;
+}
+
 .footer-logo span {
-    color: #FFF;
+    color: rgba(255, 255, 255, 0.85);
     font-family: Manrope;
-    font-size: 16px;
+    /* font-size: 16px; */
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 .footer-navs {
@@ -33,6 +75,12 @@
     flex-direction: column;
     text-align: left;
     gap: 24px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px;
+    /* 120% */
 }
 
 .footer-form {
@@ -41,7 +89,7 @@
     text-align: left;
     gap: 16px;
     width: 450px;
-    
+
 }
 
 .footer-form span {
@@ -62,12 +110,14 @@
     background: #FFF;
     width: 48%;
 }
-.footer-form div{
+
+.footer-form div {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .footer-form textarea {
     padding: 12px 18px;
     border-radius: 5px;
@@ -85,7 +135,7 @@
     width: 93px;
     box-sizing: border-box;
     cursor: pointer;
-    color:  #FFF;
+    color: #FFF;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -94,19 +144,32 @@
     letter-spacing: -0.192px;
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:750px) {
     .footer-page {
-        
-       
+
+
         padding: 30px;
         gap: 24px;
-        
+
+
     }
-    .footer-form div{
+
+    .footer-form div {
         flex-direction: column;
         gap: 16px;
     }
-    .footer-form input{
-       width: 100%;
+
+    .footer-form input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .footer-divider {
+        height: 1px;
+        width: 100%;
+    }
+    .footer-form{
+        margin-top: 15px;
     }
 }

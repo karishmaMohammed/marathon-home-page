@@ -1,13 +1,23 @@
 .whyus-page {
+    padding-top: 40px;
+    padding-bottom: 40px;
     width: 100%;
     /* margin-top: 90px; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: url('https://marathon-web-assets.s3.ap-south-1.amazonaws.com/why-marathon-bg.svg');
     /* background: white; */
 }
-
+.whyus-page-head{
+    width: 100%;
+    /* margin-top: 90px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .whyus-head {
     color: #001325;
     font-size: 36px;
@@ -66,6 +76,7 @@
 .whyus-cont-desc{
     font-size: 16px;
     font-weight: 400;
+    opacity: 0.5;
 }
 
 

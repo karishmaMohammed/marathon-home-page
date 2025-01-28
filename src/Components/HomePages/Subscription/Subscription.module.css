@@ -160,6 +160,7 @@
 .subscription-page-list-details-right {
     width: 30%;
     padding-bottom: 16px;
+    opacity: 0.5;
 }
 
 .subscription-page-line {

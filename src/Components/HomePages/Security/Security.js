@@ -32,7 +32,7 @@ function Security({openDemoForm, setOpenDemoForm}) {
                   width={40} // Adjust the width and height as necessary
                   height={40}
                 />
-                <span>Encryption at rest</span>
+                <span className={styles["security-desc-points"]}>Encryption at rest</span>
               </div>
               <div className={styles["security-internal-points"]}>
                 <Image
@@ -41,7 +41,7 @@ function Security({openDemoForm, setOpenDemoForm}) {
                   width={40}
                   height={40}
                 />
-                <span>Encryption in transit</span>
+                <span className={styles["security-desc-points"]}>Encryption in transit</span>
               </div>
               <div className={styles["security-internal-points"]}>
                 <Image
@@ -50,7 +50,7 @@ function Security({openDemoForm, setOpenDemoForm}) {
                   width={40}
                   height={40}
                 />
-                <span>Single-sign on</span>
+                <span className={styles["security-desc-points"]}>Single-sign on</span>
               </div>
               <div className={styles["security-internal-points"]}>
                 <Image
@@ -59,7 +59,7 @@ function Security({openDemoForm, setOpenDemoForm}) {
                   width={40}
                   height={40}
                 />
-                <span>Multi-factor Authentication</span>
+                <span className={styles["security-desc-points"]}>Multi-factor Authentication</span>
               </div>
             </div>
             <div className={styles["security-points-1"]}>
@@ -70,7 +70,7 @@ function Security({openDemoForm, setOpenDemoForm}) {
                   width={40}
                   height={40}
                 />
-                <span>Role-based access controls</span>
+                <span className={styles["security-desc-points"]}>Role-based access controls</span>
               </div>
               <div className={styles["security-internal-points"]}>
                 <Image
@@ -79,7 +79,7 @@ function Security({openDemoForm, setOpenDemoForm}) {
                   width={40}
                   height={40}
                 />
-                <span>Logging, auditing and monitoring features</span>
+                <span className={styles["security-desc-points"]}>Logging, auditing and monitoring features</span>
               </div>
               <div className={styles["security-internal-points"]}>
                 <Image
@@ -88,7 +88,7 @@ function Security({openDemoForm, setOpenDemoForm}) {
                   width={40}
                   height={40}
                 />
-                <span>Features to enhance privacy of personal data</span>
+                <span className={styles["security-desc-points"]}>Features to enhance privacy of personal data</span>
               </div>
             </div>
           </div>
