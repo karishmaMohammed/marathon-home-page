@@ -12,12 +12,13 @@
   display: none;
 }
 @media screen and (max-width:750px){
-  .mobile-view{
-    display: block;
+  /* .mobile-view{
+    display: flex;
+    flex-direction: column;
   }
   .desktop-view{
     display: none;
-  }
+  } */
 }
 /* Optional: Custom animation for specific sections */
 @keyframes fadeInSlideUp {

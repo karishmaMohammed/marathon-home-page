@@ -52,7 +52,7 @@ function Security({openDemoForm, setOpenDemoForm}) {
                 />
                 <span className={styles["security-desc-points"]}>Single-sign on</span>
               </div>
-              <div className={styles["security-internal-points"]}>
+              {/* <div className={styles["security-internal-points"]}>
                 <Image
                   src={IMAGEURLS.points}
                   alt="Multi-factor Authentication"
@@ -60,7 +60,7 @@ function Security({openDemoForm, setOpenDemoForm}) {
                   height={40}
                 />
                 <span className={styles["security-desc-points"]}>Multi-factor Authentication</span>
-              </div>
+              </div> */}
             </div>
             <div className={styles["security-points-1"]}>
               <div className={styles["security-internal-points"]}>

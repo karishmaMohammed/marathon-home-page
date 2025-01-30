@@ -10,7 +10,7 @@ function Subscription() {
       setIsOn((prevState) => !prevState);
     };
     return (
-        <div className={styles['subscription-page']}>
+        <div id='pricing' className={styles['subscription-page']}>
             <div className={styles['subscription-page-text']}>
                 <span className={styles['subscription-page-head']}>Marathon-OS Subscription</span>
                 <span className={styles['subscription-page-subhead']}>Simple Pricing, Full Access</span>
@@ -30,7 +30,7 @@ function Subscription() {
                     <span>Yearly</span>
                 </div>
                 <div className={styles['subscription-page-cost']}>
-                    <span>₹1500 per user</span>
+                <span>{isOn ? "₹15000 per user" : "₹1500 per user"}</span>
                 </div>
             </div>
             <div className={styles['subscription-page-list']}>

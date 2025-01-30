@@ -1,16 +1,15 @@
 import React from 'react';
-import { useRouter } from "next/navigation"; // Use useRouter from Next.js for client-side navigation
-import styles from './HomeTopNav.module.css'; // Import your CSS module
+import Link from 'next/link'; 
+import styles from './HomeTopNav.module.css'; 
 
-function HomeNavs({ onClose,openDemoForm, setOpenDemoForm }) {
-  
-  const router = useRouter(); // Initialize the useRouter hook for navigation
+function HomeNavs({ onClose, openDemoForm, setOpenDemoForm }) {
+
 
   const handleCloseMenu = () => {
     onClose(); // Close the menu using the onClose prop
   };
 
-  
+
 
   return (
     <div className={styles['menu-page']}>
@@ -18,14 +17,18 @@ function HomeNavs({ onClose,openDemoForm, setOpenDemoForm }) {
         <span onClick={handleCloseMenu}>close x</span>
       </div>
       <div className={styles['menu-navs']}>
-        {/* Use <a> tags for links or <Link> for navigation */}
-        <a href="#why-us" style={{textDecoration:'none'}} onClick={handleCloseMenu}>Why us?</a>
-        <a href="#capabilities" style={{textDecoration:'none'}} onClick={handleCloseMenu}>Capabilities</a>
-        {/* <a href="#compliance" onClick={handleCloseMenu}>Compliance</a> */}
-        <a href="#security" style={{textDecoration:'none'}} onClick={handleCloseMenu}>Security</a>
+        {/* <Link href="#why-us" onClick={handleCloseMenu}>Why us?</Link>
+        <Link href="#capabilities" onClick={handleCloseMenu}>Capabilities</Link>
+        <Link href="#security" onClick={handleCloseMenu}>Security</Link> */}
+        <Link href="#why-us" onClick={handleCloseMenu}>Why us?</Link>
+        <Link href="#capabilities" onClick={handleCloseMenu}>Capabilities</Link>
+        <Link href="#product" onClick={handleCloseMenu}>Product</Link>
+        <Link href="#pricing" onClick={handleCloseMenu}>Subscription</Link>
+        <Link href="#security" onClick={handleCloseMenu}>Security</Link>
+      
       </div>
       <div className={styles['menu-buttons']}>
-      <button className={styles['try-demo']} onClick={() => setOpenDemoForm(!openDemoForm)}>Request demo</button>
+        <button className={styles['try-demo']} onClick={() => setOpenDemoForm(!openDemoForm)}>Request demo</button>
         {/* <button className={styles['home-login-menu']} onClick={HnadleNavigate}>
           Login
         </button> */}

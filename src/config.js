@@ -1,12 +1,12 @@
 export const BASE_URL = "http://localhost:4000"
-export const DEFAULT_PHOTO = "https://marathon-web-assets.s3.ap-south-1.amazonaws.com/profilelogodefault.png"
-export const PHOTO_LINK = "https://member-images.s3.ap-south-1.amazonaws.com/"
-export const DEFAULT_COMPANY_LINK = "https://member-images.s3.ap-south-1.amazonaws.com/upload_1695283928.png"
-export const ASSET_PREFIX_URL = "https://marathon-web-assets.s3.ap-south-1.amazonaws.com/";
+// export const DEFAULT_PHOTO = "https://marathon-web-assets.s3.ap-south-1.amazonaws.com/profilelogodefault.png"
+// export const PHOTO_LINK = "https://member-images.s3.ap-south-1.amazonaws.com/"
+// export const DEFAULT_COMPANY_LINK = "https://member-images.s3.ap-south-1.amazonaws.com/upload_1695283928.png"
+export const ASSET_PREFIX_URL = "https://d1d8a3050v4fu6.cloudfront.net/homepage-assets/";
 // export const HEADERS = { "x-auth-token": localStorage.getItem('token')}
 
 export const IMAGEURLS = {
-  logo: `${ASSET_PREFIX_URL}marathon-logo.png`,
+  logo: `${ASSET_PREFIX_URL}marathon-demo-logo.svg`,
   hardwareLogo: `${ASSET_PREFIX_URL}hardware_logo.webp`,
   menu: `${ASSET_PREFIX_URL}menu-icon.webp`,
   easyToUse: `${ASSET_PREFIX_URL}easy-to-use.webp`,

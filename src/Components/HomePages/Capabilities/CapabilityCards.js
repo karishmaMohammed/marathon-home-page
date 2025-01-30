@@ -23,13 +23,13 @@ const CAPABILITIESLIST = [
     },
     {
         // image: IMAGEURLS.cadCapability,
-        title: 'Production Scheduling',
-        description: 'Plan and monitor production in real time.'
+        title: 'Inventory Management',
+        description: 'Track and manage stock levels with ease.'
     },
     {
         // image: IMAGEURLS.cadCapability,
-        title: 'Inventory and Purchase Management',
-        description: 'Stay on top of supplies and orders.'
+        title: 'Purchase Management',
+        description: 'Streamline procurement and supplier orders.'
     },
     {
         // image: IMAGEURLS.cadCapability,

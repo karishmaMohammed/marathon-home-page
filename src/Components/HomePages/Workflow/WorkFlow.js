@@ -14,7 +14,7 @@ function WorkFlow({ openDemoForm, setOpenDemoForm }) {
 
 
 
-        <div className={styles["workflow-page"]} style={{ position: 'relative' }}>
+        <div id='home' className={styles["workflow-page"]} style={{ position: 'relative' }}>
 
             <Boxes />
 
@@ -30,6 +30,7 @@ function WorkFlow({ openDemoForm, setOpenDemoForm }) {
                         <Image
                             src={IMAGEURLS.carLogo}
                             alt="Encryption in transit"
+                            loading="lazy"
                             width={100}
                             height={100}
                         />
@@ -44,9 +45,9 @@ function WorkFlow({ openDemoForm, setOpenDemoForm }) {
                             src={IMAGEURLS.latopLogo}
                             alt="Encryption in transit"
                             width={180}
-                            height={180}
+                            height={180} loading="lazy"
                         />
-                        <span>Automotive</span>
+                        <span>Consumer</span>
                     </div>
                 </div>
 
@@ -58,9 +59,9 @@ function WorkFlow({ openDemoForm, setOpenDemoForm }) {
                             src={IMAGEURLS.droneLogo}
                             alt="Encryption in transit"
                             width={160}
-                            height={100}
+                            height={100} loading="lazy"
                         />
-                        <span>Automotive</span>
+                        <span>Aerospace</span>
                     </div>
                 </div>
 
@@ -72,9 +73,9 @@ function WorkFlow({ openDemoForm, setOpenDemoForm }) {
                             src={IMAGEURLS.robotLogo}
                             alt="Encryption in transit"
                             width={160}
-                            height={140}
+                            height={140} loading="lazy"
                         />
-                        <span>Automotive</span>
+                        <span>Medical</span>
                     </div>
                 </div>
 
@@ -86,10 +87,10 @@ function WorkFlow({ openDemoForm, setOpenDemoForm }) {
                             src={IMAGEURLS.craneLogo}
                             alt="Encryption in transit"
                             width={152}
-                            height={180}
+                            height={180} loading="lazy"
                             className={styles["workflow-crane-img"]}
                         />
-                        <span>Automotive</span>
+                        <span>Machinery</span>
                     </div>
                 </div>
 

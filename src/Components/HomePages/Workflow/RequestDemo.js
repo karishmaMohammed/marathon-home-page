@@ -10,28 +10,35 @@ function RequestDemo({ onclose }) {
   const [name, setName] = useState('')
   const [phoneNumber, setPhoneNumber] = useState('')
   const [message, setMessage] = useState('')
+  const [error, setError] = useState('')
+  
   const requestDemo = async () => {
     try {
       if (!name) {
-        console.log('name required')
+        setError('name required')
+        
       }
-      if (!phoneNumber) {
-        console.log('phoneNumber required')
+      else if (!phoneNumber) {
+        setError('phoneNumber required')
+        
       }
-      if (!message) {
-        console.log('message required')
+      else if (!message) {
+        setError('message required')
+        
+      }else{
+        const response = await axios.post(
+          BASE_URL + "/v1/member/demo",
+          { phoneNumber, name, message },
+          { headers: { "x-auth-token": localStorage.getItem('token') } }
+        );
+        if (!response.data.meta.success) {
+          console.log(response.data.meta.message)
+        } else {
+          onclose()
+        }
       }
       // const data = selectedOption.value === "Admin" ? true : false;
-      const response = await axios.post(
-        BASE_URL + "/v1/member/demo",
-        { phoneNumber, name, message },
-        { headers: { "x-auth-token": localStorage.getItem('token') } }
-      );
-      if (!response.data.meta.success) {
-        console.log(response.data.meta.message)
-      } else {
-        onclose()
-      }
+      
       // console.log(response)
     } catch (error) {
       console.log(error);
@@ -59,6 +66,7 @@ function RequestDemo({ onclose }) {
             <input placeholder='Phone number*' onChange={(e) => setPhoneNumber(e.target.value)} />
           </div>
           <textarea placeholder='Message*' onChange={(e) => setMessage(e.target.value)} />
+             <span style={{opacity:error?'1':'0',color:'red',fontSize:'14px'}}>{error?`* ${error}`:'no text'}</span>
           <button onClick={requestDemo}>Submit</button>
 
         </div>
