@@ -3,6 +3,8 @@ import { IMAGEURLS } from "@/config";
 import Image from "next/image";
 import styles from './CommingSoon.module.css'
 
+
+
 function CommingSoon() {
     return (
         <div className={styles['comming-soon-page']}>
